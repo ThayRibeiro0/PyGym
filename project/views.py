@@ -50,8 +50,17 @@ def atualizar(id: int):
         cellphone = request.form.get('cellphone')
         course = request.form.get('course')
         payment = request.form.get('payment')
-        new_student1 = (fullname, birthdate, address, cellphone, course, payment, id)
-        db.session.execute("UPDATE student SET fullname = :fullname, birthdate = :birthdate, address = :address, cellphone = :cellphone, course = :course, payment = :payment WHERE id = ?", new_student1)
+        new_student1 = {
+            'id': id,
+            'fullname': fullname,
+            'birthdate': birthdate,
+            'address': address,
+            'cellphone': cellphone,
+            'course': course,
+            'payment': payment,
+        };
+
+        db.session.execute("UPDATE student SET fullname = :fullname, birthdate = :birthdate, address = :address, cellphone = :cellphone, course = :course, payment = :payment WHERE id :id", new_student1)
         db.session.commit()
         db.session.close()
         return redirect(url_for('views.home'))
