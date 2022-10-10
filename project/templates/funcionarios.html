@@ -1,0 +1,32 @@
+{% extends "base1.html" %} {% block title %} Funcionarios {% endblock %}
+
+{% block content %}
+
+<div class="video">
+    <video autoplay muted loop plays-inline class="video"><source src="../static/particles.mp4" type="video/mp4" class="video_source"></video>
+</div>
+
+<h3>Funcionarios Cadastrados</h3>
+   <table class="table custom-table-hover">
+      <tr align-items="center">
+         <th>id</th>
+         <th>fullname</th>
+         <th>email</th>
+         <th>password</th>
+         <th>confirm</th>
+      </tr>
+      <tbody id="geeks">
+      {% for item in resulta %}
+      <tr align-items="center">
+         <td>{{item["id"]}}</td>
+         <td>{{item["fullname"]}}</td>
+         <td>{{item["email"]}}</td>
+         <td>{{item["password"]}}</td>
+         <td>{{item["confirm"]}}</td>
+      </tr>
+      {% endfor %}
+   </table>
+   </div>
+   </div>
+
+{% endblock %}

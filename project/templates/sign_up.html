@@ -1,0 +1,36 @@
+{% extends "base1.html" %} {% block title %} Sign Up {% endblock %}
+
+{% block content %}
+<div class="video">
+    <video autoplay muted loop plays-inline class="video"><source src="../static/particles.mp4" type="video/mp4" class="video_source"></video>
+</div>
+
+<div class="wrapper">
+    <div class="title-text">
+        <div class="title signup" style="margin-bottom: 15px">Sign up</div>
+    </div>
+
+<form method="POST">
+    <div class="field">
+        <input type="fullname" class="form-control" id="fullname" name="fullname" placeholder="fullname" required style="margin-bottom: 15px; font-size: 20px;">
+    </div>
+    <br />
+    <div class="field">
+        <input type="email" class="form-control" id="email" name="email" placeholder="email" required style="margin-bottom: 15px; font-size: 20px;">
+    </div>
+    <br />
+    <div class="field">
+        <input type="password1" class="form-control" id="password1" name="password1" placeholder="password" required style="margin-bottom: 15px; font-size: 20px;">
+    </div>
+    <br />
+    <div class="field">
+        <input type="password2" class="form-control" id="password2" name="password2" placeholder="confirm" required style="margin-bottom: 15px; font-size: 20px;">
+    </div>
+    <br />
+    <div class="field btn">
+        <div class="btn-layer"></div>
+        <input type="submit" class="btn btn-primary"value="Signs">
+    </div>
+</form>
+
+{% endblock %}

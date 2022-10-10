@@ -1,0 +1,1 @@
+alert('Welcome, make the loggin to access the page!')

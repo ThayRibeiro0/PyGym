@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../static/base.css" />
+  <title>{% block title %}Home{% endblock %}</title>
+</head>
+
+<body>
+  <!-- Navebar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="nav-center">
+      <img src="../static/academia.png" alt="logo" class="logo"/>
+
+      <ul class="links">
+       <li>
+          <a class="nav-item nav-link" id="login" href="/">Home</a>
+        </li>
+        <li>
+          <a class="nav-item nav-link" id="login" href="/sign-up">Sign Up</a>
+        </li>
+        <li>
+          <a class="nav-item nav-link" id="login" href="/funcionarios">Funcionarios</a>
+        </li>
+     </ul>
+    </div>
+  </nav>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+
+  {% if messages %}
+
+  {% for category, message in messages %}
+  {% if category == 'error' %}
+  <div class="alert alert-danger alter-dismissable fade show" role="alert">
+    {{ message }}
+    <button type="button" class="close" data-dismiss="alert">
+      <span aria-hidden="true"></span>
+    </button>
+  </div>
+  {% else %}
+  <div class="alert alert-success alter-dismissable fade show" role="alert">
+    {{ message }}
+    <button type="button" class="close" data-dismiss="alert">
+      <span aria-hidden="true"></span>
+    </button>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+  {% endif %}
+
+  {% endwith %}
+
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+  </div>
+
+  <!-- Navebar -->
+</body>
+
+</html>
