@@ -43,24 +43,17 @@ def deletar(id: int):
 @views.route('/atualizar/<id>', methods=['GET', 'POST'])
 def atualizar(id: int):
     if request.method == 'POST':
-
-        fullname = request.form.get('fullname')
-        birthdate = request.form.get('birthdate')
-        address = request.form.get('address')
-        cellphone = request.form.get('cellphone')
-        course = request.form.get('course')
-        payment = request.form.get('payment')
         new_student1 = {
             'id': id,
-            'fullname': fullname,
-            'birthdate': birthdate,
-            'address': address,
-            'cellphone': cellphone,
-            'course': course,
-            'payment': payment,
+            'fullname': request.form.get('fullname'),
+            'birthdate': request.form.get('birthdate'),
+            'address': request.form.get('address'),
+            'cellphone': request.form.get('cellphone'),
+            'course': request.form.get('course'),
+            'payment': request.form.get('payment')
         };
 
-        db.session.execute("UPDATE student SET fullname = :fullname, birthdate = :birthdate, address = :address, cellphone = :cellphone, course = :course, payment = :payment WHERE id :id", new_student1)
+        db.session.execute("UPDATE student SET fullname = :fullname, birthdate = :birthdate, address = :address, cellphone = :cellphone, course = :course, payment = :payment WHERE id = :id", new_student1)
         db.session.commit()
         db.session.close()
         return redirect(url_for('views.home'))
