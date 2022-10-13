@@ -2,6 +2,9 @@
 
 Web-based application using JavaScript, Python, and SQL.
 
+## Video Demo: <https://youtu.be/UXD7D4jK85M>
+
+
 ## Description
 
 This project has as purpose help one gym that make the control about him students with excel and need to be more technological and agile in your routine. The company can control the web page with three routes: Login(employees page), Sign-up(admin1 page) and Admin(admin2 page). The Login page only who have the email and password create can access the home page and to do the register of students and logout there. The sign up can register the employees and see them in the list of employees that can work in the home page. The Admin it's who control de access about everything deleting the employees or edit them for access the home page. Yes, I debated by my boyfriend and serch online themes and ways for to do and I make like this because it was the purpose that I received from my boyfrind for make and resolve on problem.
