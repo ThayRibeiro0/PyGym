@@ -4,8 +4,16 @@ Web-based application using JavaScript, Python, and SQL.
 
 <p align="center">
   <img src="https://img.shields.io/github/downloads/ThayRibeiro0/project0.2/total?color=%2300ff00&logo=Github&style=plastic" />
-![GitHub all releases](https://img.shields.io/github/downloads/ThayRibeiro0/project0.2/total?color=%2300ff00&logo=Github&style=plastic)
-![GitHub repo size](https://img.shields.io/github/repo-size/ThayRibeiro0/project0.2?style=plastic)
+  <img src="https://img.shields.io/github/repo-size/ThayRibeiro0/project0.2?style=plastic" />
+  <img src="https://img.shields.io/github/languages/top/ThayRibeiro0/project0.2?style=plastic" />
+  <img src="https://img.shields.io/github/last-commit/ThayRibeiro0/project0.2?style=plastic" />
+</p>
+
+<p align="center">
+  <img src="https://https://img.shields.io/badge/-Javascript-green" />
+  <img src="https://img.shields.io/github/repo-size/ThayRibeiro0/project0.2?style=plastic" />
+  <img src="https://img.shields.io/github/languages/top/ThayRibeiro0/project0.2?style=plastic" />
+  <img src="https://img.shields.io/github/last-commit/ThayRibeiro0/project0.2?style=plastic" />
 </p>
 
 
