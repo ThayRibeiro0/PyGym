@@ -10,7 +10,7 @@ Web-based application using JavaScript, Python, and SQL.
 </p>
 
 <p align="center">
-  <img src="https://https://img.shields.io/badge/-Javascript-green" />
+  <img src="https://img.shields.io/badge/v1?message=<Javascript>&color=<green>" />
   <img src="https://img.shields.io/github/repo-size/ThayRibeiro0/project0.2?style=plastic" />
   <img src="https://img.shields.io/github/languages/top/ThayRibeiro0/project0.2?style=plastic" />
   <img src="https://img.shields.io/github/last-commit/ThayRibeiro0/project0.2?style=plastic" />
