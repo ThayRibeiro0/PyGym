@@ -1,3 +1,7 @@
+# Final Project - Pygym
+
+Web-based application using JavaScript, Python, and SQL.
+
 <p align="center">
     <img src="https://img.shields.io/github/repo-size/jpd61/README-generator" />
     <img src="https://img.shields.io/github/languages/top/jpd61/README-generator"  />
@@ -17,9 +21,6 @@
     <img src="https://img.shields.io/badge/-json-orange" />
 </p>
 
-# Final Project - Pygym
-
-Web-based application using JavaScript, Python, and SQL.
 
 ## Video Demo: <https://youtu.be/UXD7D4jK85M>
 
