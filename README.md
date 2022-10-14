@@ -11,8 +11,8 @@ Web-based application using JavaScript, Python, and SQL.
 
 <p align="center">
     <img src="https://img.shields.io/badge/-Javascript/total?logo=Javascript" />
-    <img src="https://img.shields.io/badge/Html-blue"  />
-    <img src="https://img.shields.io/badge/Css-red" />
+    <img src="https://img.shields.io/badge/Html-purple"  />
+    <img src="https://img.shields.io/badge/Css-darkred" />
     <img src="https://img.shields.io/badge/-Python/total?logo=Python" >
     <img src="https://img.shields.io/badge/SQL-pink" />
     <img src="https://img.shields.io/badge/-Flask/total?logo=Flask" />
