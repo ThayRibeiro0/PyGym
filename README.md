@@ -2,6 +2,7 @@
 
 Web-based application using JavaScript, Python, and SQL.
 
+![GitHub all releases](https://img.shields.io/github/downloads/ThayRibeiro0/project0.2/total?color=%2300ff00&logo=Github&style=plastic)
 
 ## Video Demo: <https://youtu.be/UXD7D4jK85M>
 
