@@ -10,10 +10,11 @@ Web-based application using JavaScript, Python, and SQL.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-Javascript-green/ThayRibeiro0/project0.2?style=plastic")/>
-  <img src="https://img.shields.io/github/repo-size/ThayRibeiro0/project0.2?style=plastic" />
-  <img src="https://img.shields.io/github/languages/top/ThayRibeiro0/project0.2?style=plastic" />
-  <img src="https://img.shields.io/github/last-commit/ThayRibeiro0/project0.2?style=plastic" />
+    <img src="https://img.shields.io/badge/Javascript-yellow" />
+    <img src="https://img.shields.io/badge/Html-blue"  />
+    <img src="https://img.shields.io/badge/Css-green" />
+    <img src="https://img.shields.io/badge/Python-red" >
+    <img src="https://img.shields.io/badge/SQL-lightgrey" />
 </p>
 
 
