@@ -10,9 +10,9 @@ Web-based application using JavaScript, Python, and SQL.
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Javascript-total?logo=Javascript" />
-    <img src="https://img.shields.io/badge/Html-blue-total?logo=Html&style"  />
-    <img src="https://img.shields.io/badge/Css-green-total?logo=Css&style" />
+    <img src="https://img.shields.io/badge/Javascript-black/total?logo=Javascript" />
+    <img src="https://img.shields.io/badge/Html-blue"  />
+    <img src="https://img.shields.io/badge/Css-green" />
     <img src="https://img.shields.io/badge/Python-total?logo=Python&style" >
     <img src="https://img.shields.io/badge/SQL-total?logo=SQL&style" />
     <img src="https://img.shields.io/badge/Flask-total?logo=Flask&style" />
