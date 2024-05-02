@@ -1,10 +1,14 @@
 from flask import Flask
-from .env import secret
+# from .env import secret
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
+import secrets
+
+# Generate a secure random key
+secret_key = secrets.token_hex(16)
 
 db = SQLAlchemy()
 DB_NAME = "database.db"
@@ -12,7 +16,7 @@ DB_NAME = "database.db"
 def create_app():
     app = Flask(__name__)
     app.config['TEMPLATES_AUTO_RELOAD'] = True
-    app.config['SECRET_KEY'] = secret
+    app.config['SECRET_KEY'] = secret_key
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
     db.init_app(app)
 

@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 from flask_login import login_required, current_user
 from sqlalchemy.orm import Session
+from sqlalchemy import text 
 from . import db
 from .models import Student
 
@@ -14,7 +15,7 @@ def home():
 
 #home
 def getstudent():
-    result = db.session.execute('SELECT * FROM student').fetchall()
+    result = db.session.execute(text('SELECT * FROM student')).fetchall()
     db.session.close()
     return result
 
@@ -51,9 +52,9 @@ def atualizar(id: int):
             'cellphone': request.form.get('cellphone'),
             'course': request.form.get('course'),
             'payment': request.form.get('payment')
-        };
-
-        db.session.execute("UPDATE student SET fullname = :fullname, birthdate = :birthdate, address = :address, cellphone = :cellphone, course = :course, payment = :payment WHERE id = :id", new_student1)
+        }
+        update_query = text("UPDATE student SET fullname = :fullname, birthdate = :birthdate, address = :address, cellphone = :cellphone, course = :course, payment = :payment WHERE id = :id")
+        db.session.execute(update_query, new_student1)
         db.session.commit()
         db.session.close()
         return redirect(url_for('views.home'))
@@ -63,7 +64,7 @@ def atualizar(id: int):
     return render_template('update.html', students=atualizar)
 
 def getstudents(student_id: int):
-    students = db.session.execute(f'SELECT * FROM student WHERE id = {student_id}').fetchone()
+    students = db.session.execute(text(f'SELECT * FROM student WHERE id = {student_id}')).fetchone()
     db.session.close()
     return students
 
@@ -73,6 +74,6 @@ def funcionarios():
     return render_template('funcionarios.html', user=current_user, resulta=study, total=len(study))
 
 def getstudy():
-    resulta = db.session.execute('SELECT * FROM user').fetchall()
+    resulta = db.session.execute(text('SELECT * FROM user')).fetchall()
     db.session.close()
     return resulta
